@@ -22,7 +22,7 @@ mongoose.connect('mongodb://localhost:27017/coolcarsdb');
 
 
 const carsSchema = new mongoose.Schema({
-  model: {type: String, required: true},
+  model: {type: String, required: true, unique: true},
   maker: String,
   horsepower: Number,
   engine: String,
