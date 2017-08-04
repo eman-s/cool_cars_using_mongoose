@@ -33,6 +33,28 @@ const carsSchema = new mongoose.Schema({
 });
 
 const Coolcar = mongoose.model('Coolcar', carsSchema);
+var car = new Coolcar({
+  model: "Road Runner",
+  maker: 'Plymouth',
+  engine: '',
+  horsepower: 335,
+  year: 1970,
+  description: 'another cool car',
+  kind: "musclecar",
+  imageURL: "https://cdn.barrett-jackson.com/staging/carlist/items/Fullsize/Cars/90927/90927_Front_3-4_Web.jpg",
+});
+
+
+
+// car.save().then(function(){
+//   //actions after succesful save
+//   console.log("car saved");
+// }).catch(function(e){
+//   console.log('mongo cant save car', e);
+//   //handle error
+// });
+
+
 
 
 app.get('/', function(req, res){
