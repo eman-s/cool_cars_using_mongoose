@@ -46,13 +46,13 @@ var car = new Coolcar({
 
 
 
-// car.save().then(function(){
-//   //actions after succesful save
-//   console.log("car saved");
-// }).catch(function(e){
-//   console.log('mongo cant save car', e);
-//   //handle error
-// });
+car.save().then(function(){
+  //actions after succesful save
+  console.log("car saved");
+}).catch(function(e){
+  console.log('mongo cant save car', e);
+  //handle error
+});
 
 
 
